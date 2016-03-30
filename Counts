@@ -1,0 +1,48 @@
+sqlite> select count(*) from tweets;
+59506
+sqlite> select count(*) from tweets;
+Error: database is locked
+sqlite> select count(*) from tweets;
+306802
+sqlite> select count(*) from tweets where hashtags not like '';
+84014
+sqlite> select count(*) from tweets where text  like '%Italia%';
+16453
+sqlite> select count(*) from tweets where text  like '%Pasta%';
+570
+sqlite> select count(*) from tweets where text  like '%Florence%';
+3787
+sqlite> select count(*) from tweets where text  like '%Rome%';
+9764
+sqlite> select count(*) from tweets where text  like '%Venice%';
+8061
+sqlite> select count(*) from tweets where text  like '%Sorrento%';
+309
+sqlite> select count(*) from tweets where text  like '%Seinna%';
+0
+sqlite> select count(*) from tweets where text  like '%Amalfi%';
+883
+sqlite> select count(*) from tweets where text  like '%Sienna%';
+28
+sqlite> select count(*) from tweets where text  like '%Colloseum%';
+20
+sqlite> select count(*) from tweets where text  like '%Coliseum%';
+36
+sqlite> select count(*) from tweets where text  like '%Col%';
+9498
+sqlite> select count(*) from tweets where text  like '%Coli%';
+
+sqlite> select count(*) from tweets where text  like '%pasta%';
+570
+sqlite> select count(*) from tweets where text  like '%pizza%';
+1297
+sqlite> select count(*) from tweets where text  like '%tiramisu%';
+15
+sqlite> select count(*) from tweets where text  like '%croissant%';
+12
+sqlite> select count(*) from tweets where text  like '%gelatto%';
+0
+sqlite> select count(*) from tweets where text  like '%dessert%';
+74
+sqlite> select count(*) from tweets where text  like '%gelato%';
+176
